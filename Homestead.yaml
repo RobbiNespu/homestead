@@ -21,6 +21,7 @@ sites:
 
 databases:
     - homestead
+    - wp_wordpress1
 
 features:
     - mysql: true
@@ -35,9 +36,9 @@ services:
 #    - disabled:
 #        - "postgresql@11-main"
 
-#ports:
-#    - send: 33060 # MySQL/MariaDB
-#      to: 3306
+ports:
+    - send: 33060 # MySQL/MariaDB
+      to: 3306
 #    - send: 4040
 #      to: 4040
 #    - send: 54320 # PostgreSQL
